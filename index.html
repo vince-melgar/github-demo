@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;            
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            display: block;       
+        }
+        .box1{
+            background-color: red;
+            display: inline-block;
+        }
+        .box2{
+            background-color: green;
+            display: inline-block;
+        }
+        .box3{
+            background-color: blue;            
+        }
+        .box4{
+            background-color: orange;
+            display: none;          
+        }
+        .box5{
+            background-color: yellow;
+            display: inline;
+        }
+        .box6{
+            background-color: aqua;
+            /* padding shorthand property */
+            /*
+                padding-top: 20px
+                padding-right: 20px
+                padding-bottom: 20px
+                padding-left: 20px
+            */
+
+            /* border shorthand property */
+            /*
+            border: 1px solid black;
+            border-width: 1px 2px 3px 4px;
+            border-style: solid dashed double groove;
+
+            border-top 1px solid black;
+            border-right 1px solid black
+            border-bottom 1px solid black
+            border-left 1px solid black
+            */
+
+            /* margin shorthand property */
+            /* 
+            margin-top 1px solid black;
+            margin-right 1px solid black
+            margin-bottom 1px solid black
+            margin-left 1px solid black
+            */        
+        }
+        
+        .navigation{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .navigation li{
+            display: inline-block;
+        }
+
+        .navigation li a{
+            text-transform: uppercase;
+            color: rgb(4, 4, 73);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navigation li a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .box7{
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .box7:hover p{
+            color: blueviolet;
+        }
+
+        .parent li:first-child{
+            color: fuchsia;
+            font-size: 24px;
+        }
+
+        .parent li:nth-child(3) {
+            color: royalblue;
+            font-size: 30px;
+        }
+        .parent li:last-child {
+            color: rgb(211, 16, 58);
+            font-size: 24px;
+        }
+        .parent li:nth-child(even) {
+            color: rgb(185, 250, 7);
+            font-size: 28px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Display Properties</h1>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box6">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, non.
+    </div>
+
+    <ul class="navigation">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+    
+    <div class="box7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, similique!</p>
+    </div>
+
+    <ul class="parent">
+        <li>1st child</li>
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+    </ul>
+</body>
+</html>
