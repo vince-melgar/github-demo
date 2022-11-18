@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header,
+footer{
+    height: 15vh;
+    background-color: rgb(35, 233, 61);
+    padding: 15px;
+}
+
+main{
+    height: 70vh;
+    display: flex;
+}
+
+nav{
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(52, 94, 129);    
+}
+aside{
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(192, 192, 192);
+}
+
+article{    
+    width: 70%;
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 20px 20px 40px 20px;
+}
+.container{
+    display: flex;
+    column-gap: 30px;
+}
+
+.flex_item.left{
+    width: 60%;
+}
+
+.field{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.field label{
+    flex: 1;    
+}
+
+.field input{  
+    flex: 2;
+    padding: 5px;
+}
+
+.field select{  
+    flex: 2;   
+    padding: 5px;    
+}
+
+.flex_item.right{
+    width: 40%;
+}
+
+.btn_container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    border: 0;
+    padding: 10px;
+    background-color: rgb(88, 88, 88);    
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: burlywood;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}
