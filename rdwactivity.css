@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;      
+}
+
+body{    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.magazine{    
+    display: block;
+    width: 1000px;
+    border: 1px solid black;    
+}
+    
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+    background-color: blue;
+    border: 1px solid black;
+    
+}
+
+.menu a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.article {
+    display: flex;    
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.article .box{
+    padding: 20px;
+    border: 1px solid black;
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 600px){
+    
+    .magazine{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }    
+    .title{
+        width: 100%;
+    }
+    .nav{
+        justify-content: space-around;
+    }
+    .article{
+        flex-wrap: wrap;
+    }
+    .article .div{
+        width: 100%;
+    }
+}
