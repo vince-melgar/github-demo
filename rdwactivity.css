@@ -10,8 +10,7 @@ body{
 }
 
 .magazine{    
-    display: block;
-    width: 1000px;
+    display: block;    
     border: 1px solid black;    
 }
     
@@ -67,6 +66,7 @@ body{
     .title{
         width: 100%;
     }
+        
     .nav{
         justify-content: space-around;
     }
